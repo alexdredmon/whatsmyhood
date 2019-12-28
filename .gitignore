@@ -1,7 +1,6 @@
-node_modules/**/*
-.expo/*
-npm-debug.*
-*.jks
-*.p12
-*.key
-*.mobileprovision
+mobile/src/common
+web/src/common
+
+web/.firebase
+*.sublime-workspace
+*.pyc

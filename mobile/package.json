@@ -1,0 +1,27 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "../scripts/watch_and_sync_common.sh & expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "expo": "~36.0.0",
+    "onchange": "^6.1.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native-web": "~0.11.7",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@expo/webpack-config": "^0.10.7",
+    "babel-preset-expo": "~8.0.0"
+  },
+  "private": true,
+  "version": "0.0.0"
+}
