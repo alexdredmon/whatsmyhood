@@ -82,7 +82,7 @@ class NeighborhoodContainer extends React.Component {
             style={{
               marginTop: 50
             }}
-            url="https://apps.apple.com/app/id1234734604"
+            url="https://apps.apple.com/us/app/whats-my-hood/id1234734604?ls=1"
           />
         </FlexCell>
         <FlexCell
