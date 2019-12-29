@@ -3,11 +3,13 @@ import { connect } from 'react-redux'
 
 import { getIn } from 'common/lib/core/util/iterable'
 
+import AppStoreDownload from 'lib/components/layout/AppStoreDownload'
 import FlexCell from 'lib/components/layout/FlexCell'
 import FlexColumn from 'lib/components/layout/FlexColumn'
 import FlexRow from 'lib/components/layout/FlexRow'
 import If from 'common/lib/components/If'
 import Text from 'lib/components/layout/Text'
+import View from 'lib/components/layout/View'
 
 import ErrorMessage from 'common/components/ErrorMessage'
 import Loading from 'common/components/Loading'
@@ -76,6 +78,12 @@ class NeighborhoodContainer extends React.Component {
         </FlexCell>
         <FlexCell>
           { this.renderBody() }
+          <AppStoreDownload
+            style={{
+              marginTop: 50
+            }}
+            url="https://apps.apple.com/app/id1234734604"
+          />
         </FlexCell>
         <FlexCell
           style={{

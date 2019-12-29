@@ -1,3 +1,9 @@
 [submodule "api/lib"]
 	path = api/lib
 	url = https://github.com/alexdredmon/lib-python.git
+[submodule "web/src/lib"]
+	path = web/src/lib
+	url = https://github.com/alexdredmon/lib-react-web.git
+[submodule "mobile/src/lib"]
+	path = mobile/src/lib
+	url = https://github.com/alexdredmon/lib-react-native.git

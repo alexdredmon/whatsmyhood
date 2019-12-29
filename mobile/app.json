@@ -9,7 +9,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.8",
+    "version": "1.0.10",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -25,6 +25,11 @@
     ],
     "ios": {
       "bundleIdentifier": "com.whatsmyhood.exp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Enables identification of your current neighborhood",
+        "NSLocationAlwaysUsageDescription": "Enables identification of your current neighborhood",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Enables identification of your current neighborhood"
+      },
       "supportsTablet": true
     },
     "android": {
