@@ -1,6 +1,6 @@
 mobile/src/common
 web/src/common
 
-web/.firebase
+
 *.sublime-workspace
 *.pyc
