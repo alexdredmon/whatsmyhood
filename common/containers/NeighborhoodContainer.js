@@ -9,7 +9,6 @@ import FlexColumn from 'lib/components/layout/FlexColumn'
 import FlexRow from 'lib/components/layout/FlexRow'
 import If from 'common/lib/components/If'
 import Text from 'lib/components/layout/Text'
-import View from 'lib/components/layout/View'
 
 import ErrorMessage from 'common/components/ErrorMessage'
 import Loading from 'common/components/Loading'
