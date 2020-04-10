@@ -50,6 +50,8 @@ Install dependencies in `./web` via:
 yarn
 ```
 
+
+
 ## Run
 
 #### Mobile
@@ -67,5 +69,8 @@ Start the app in `./web` via:
 yarn start
 ```
 
+
+
+## Screenshot
 
 ![Mobile App Screenshot](https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/f9/28/99/f9289944-9b92-05e2-8682-af4ee6b5890f/pr_source.png/460x0w.png "Mobile App Screenshot")
