@@ -1,11 +1,7 @@
-Flask==0.12.2
+Flask==1.1.2
 Flask-Cors==3.0.7
-Flask-Migrate==2.4.0
 Flask-Script==2.0.6
-Flask-SQLAlchemy==2.3.2
 pika==0.13.1
-psycopg2==2.7.3.2
-
 google==2.0.2
 google-api-core==1.8.1
 google-api-python-client==1.7.8

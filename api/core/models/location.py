@@ -1,15 +1,13 @@
-from lib.psql.base_model import (
-    BaseMixin,
-    BaseModel,
-)
-from lib.psql.columns import (
-    JsonColumn,
-    StringColumn,
-)
 
-
-class Location(BaseModel, BaseMixin):
-    latitude = StringColumn(length=50)
-    longitude = StringColumn(length=50)
-    neighborhoods = JsonColumn()
-    response = JsonColumn()
+class Location:
+	def __init__(
+		self, 
+		latitude=None,
+		longitude=None,
+		neighborhoods=None,
+		response=None
+	):
+		self.latitude = latitude
+		self.longitude = longitude
+		self.neighborhoods = neighborhoods
+		self.response = response

@@ -10,12 +10,8 @@ CORS(app)
 
 
 from lib.flask.logger_middleware import LoggerMiddleware
-from lib.psql.database import db
-from lib.psql.middleware import PsqlMiddleware
 
-db.init_app(app)
 LoggerMiddleware(app)
-PsqlMiddleware(app)
 
 from core.controllers.neighborhood_controller import *
 from core.controllers.status_controller import *
