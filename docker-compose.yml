@@ -9,23 +9,6 @@ services:
       - "50005:5000"
     volumes:
       - ./api:/app
-    depends_on:
-      - db
     env_file: ./api/.env
     stdin_open: true
     tty: true
-  db:
-    container_name: whatsmyhood-db
-    build: ./db
-    env_file: ./db/.env
-    ports:
-      - "54322:5432"
-  migrate:
-    container_name: whatsmyhood-migrate
-    build: ./api
-    command: manage.py db upgrade
-    env_file: ./api/.env
-    depends_on:
-      - db
-    volumes:
-      - ./api:/app

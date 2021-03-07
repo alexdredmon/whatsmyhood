@@ -9,9 +9,9 @@ app.config.from_object(os.environ['APP_SETTINGS'])
 CORS(app)
 
 
-from lib.flask.logger_middleware import LoggerMiddleware
+# from lib.flask.logger_middleware import LoggerMiddleware
 
-LoggerMiddleware(app)
+# LoggerMiddleware(app)
 
 from core.controllers.neighborhood_controller import *
 from core.controllers.status_controller import *
