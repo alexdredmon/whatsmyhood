@@ -72,7 +72,7 @@ class NeighborhoodContainer extends React.Component {
               fontSize: 20,
             }}
           >
-            What neighborhood are you in?
+            What's your current neighborhood?
           </Text>
         </FlexCell>
         <FlexCell>
