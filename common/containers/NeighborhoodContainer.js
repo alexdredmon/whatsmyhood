@@ -9,6 +9,7 @@ import FlexColumn from 'lib/components/layout/FlexColumn'
 import FlexRow from 'lib/components/layout/FlexRow'
 import If from 'common/lib/components/If'
 import Text from 'lib/components/layout/Text'
+import ViewSourceOnGitHub from 'lib/components/layout/ViewSourceOnGitHub'
 
 import ErrorMessage from 'common/components/ErrorMessage'
 import Loading from 'common/components/Loading'
@@ -68,7 +69,7 @@ class NeighborhoodContainer extends React.Component {
         <FlexCell>
           <Text
             style={{
-              color: '#cacaca',
+              color: '#8b8b8b',
               fontSize: 20,
             }}
           >
@@ -82,6 +83,9 @@ class NeighborhoodContainer extends React.Component {
               marginTop: 50
             }}
             url="https://apps.apple.com/us/app/whats-my-hood/id1234734604?ls=1"
+          />
+          <ViewSourceOnGitHub
+            url="https://github.com/alexdredmon/whatsmyhood"
           />
         </FlexCell>
         <FlexCell
