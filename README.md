@@ -3,6 +3,12 @@ https://whatsmyhood.com
 
 Answering the eternal question "is this Greenpoint or Williamsburg?"
 
+## Bookmarklet
+Add the following bookmarklet to indicate the neighborhood you're currently centered on in Google Maps:
+```
+javascript:(function()%7Bconst%20x%20%3D%20window.location.href%3B%0Aconst%20y%20%3D%20x.split('%40')%3B%0Aif%20(y.length%20%3E%201)%20%7B%0A%20%20const%20z%20%3D%20y%5B1%5D.split('%2C')%0A%20%20if%20(z.length%20%3E%201)%20%7B%0A%20%20%20%20fetch(%60https%3A%2F%2Fapi.whatsmyhood.com%2Fneighborhood%3Flatitude%3D%24%7Bz%5B0%5D%7D%26longitude%3D%24%7Bz%5B1%5D%7D%60)%0A%20%20%20%20.then(response%20%3D%3E%20response.json())%0A%20%20%20%20.then(data%20%3D%3E%20%7B%0A%20%20%20%20%20%20const%20neighborhoods%20%3D%20data.neighborhoods%3B%0A%20%20%20%20%20%20const%20joined%20%3D%20neighborhoods.join('%5Cn')%0A%20%20%20%20%20%20window.alert(joined)%0A%20%20%20%20%7D)%0A%20%20%7D%0A%7D%7D)()%3B
+```
+
 ## Setup
 
 You can run the API locally or just point to the production API to retrieve and cache neighborhood location data.  If you aren't interested in running the API locally, you can skip straight to "Client" setup instructions.
